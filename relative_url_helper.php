@@ -6,6 +6,12 @@ function relative_to_absolute_url($host, $path)
 	$path_parts    = parse_url($path);
 	$absolute_path = '';
 	
+	if (isset($path_parts['path']) && isset($host_parts['scheme']) && substr($path_parts['path'], 0, 2) === '//' && ! isset($path_parts['scheme']))
+	{
+		$path       = $host_parts['scheme'] . ':' . $path;
+		$path_parts = parse_url($path);
+	}
+	
 	if (isset($path_parts['host']))
 	{
 		return $path;
