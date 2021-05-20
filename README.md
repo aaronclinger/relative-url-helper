@@ -4,7 +4,7 @@
 
 This helper can be used freely for any open source or commercial works and is released under a [BSD licence](http://en.wikipedia.org/wiki/BSD_licenses).
 
-## SYNTAX
+## Syntax
 
 ### Description
 
@@ -15,7 +15,7 @@ This helper can be used freely for any open source or commercial works and is re
 > * _$host_ - A string containing a full URL that the path is relative to.
 > * _$path_ - The relative string to convert.
 
-## USAGE
+## Usage
 
 Here is a basic usage example on how to convert/transform a relative URL into an absolute URL:
 
@@ -37,6 +37,6 @@ The above example will output:
 
 `http://example.com/folder1/folder3/page.html`
 
-## AUTHOR
+## Author
 
-[Aaron Clinger](http://aaronclinger.com)
+[Aaron Clinger](https://aaronclinger.com)
